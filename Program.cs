@@ -60,12 +60,23 @@ namespace blackjack
     }
     class Program
     {
+        static string PromptForString(string prompt)
+        {
+            // Use the argument to create the prompt
+            Console.WriteLine(prompt);
+
+            // Get the input from the user
+            var userInput = Console.ReadLine();
+
+            // return the user input to the caller
+            return userInput;
+        }
         static void Main(string[] args)
         {
             // Prompt Player for Name
-            Console.WriteLine("Welcome. What's your name? ");
-            string userName = Console.ReadLine();
-
+            // Console.WriteLine("Welcome. What's your name? ");
+            // string userName = Console.ReadLine();
+            var userName = PromptForString("Welcome. What's your name? ");
 
             //Play again loop
             var playAgain = "y";
