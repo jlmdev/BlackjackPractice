@@ -260,8 +260,7 @@ namespace blackjack
                 }
 
                 // Prompt for play again
-                Console.WriteLine("Would you like to play again? (y/n)");
-                playAgain = Console.ReadLine();
+                playAgain = PromptForString("Would you like to play again? (y/n)");
             }
         }
 
